@@ -1,0 +1,199 @@
+/* App.css */
+
+/* Set a background image for the body */
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqYnCPODOcdqYnCppiA2fBhaeOYrr5tzq03A&s');
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-attachment: fixed; /* Fix the image in place */
+  background-position: center; /* Center the image */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space out brand and navigation links */
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for navbar */
+}
+
+/* Navbar brand styling */
+.navbar .navbar-brand {
+  color: red; /* Red color for the brand */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Navbar link styling */
+.navbar .nav-link {
+  color: black; /* Black text for links */
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 15px; /* Space between links */
+}
+
+.navbar .nav-link:hover {
+  color: blue; /* Light blue color on hover */
+}
+
+/* Ensure navbar items are in a row */
+.navbar-nav {
+  display: flex;
+  margin-left: auto; /* Push nav items to the right */
+}
+
+/* Adjust the container to account for the fixed navbar */
+.container {
+  padding: 0;
+  margin: 60px auto 0; /* Adjust top margin to account for fixed navbar */
+  max-width: 1200px; /* Adjust based on your preference */
+}
+
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column; /* Column direction to stack elements vertically */
+  justify-content: center;
+  align-items: center; /* Center-aligns items horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center-aligns text within each element */
+  padding: 20px; /* Padding around the container */
+}
+
+.home-container h2 {
+  margin-bottom: 25px; /* Space between the heading and the paragraph */
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.home-container p {
+  margin: 0; /* No margin to avoid extra space around the paragraph */
+  font-size: 25px;
+  color: black;
+}
+
+/* General container styling for the form */
+.add-entry-container {
+  max-width: 600px; /* Set a maximum width for the form container */
+  margin: 50px auto; /* Center the form container and add some top margin */
+  padding: 20px; /* Add some padding inside the container */
+  background-color: white; /* Set a background color for the form */
+  border-radius: 8px; /* Round the corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.add-entry-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form labels */
+.add-entry-container label {
+  display: block; /* Make the label a block element */
+  margin-bottom: 5px; /* Add some margin below the label */
+  font-weight: bold; /* Make the label text bold */
+  font-size: 18px;
+}
+
+/* Styling for the input fields */
+.add-entry-container input[type="text"],
+.add-entry-container textarea {
+  width: 100%; /* Make the input fields full width */
+  padding: 10px; /* Add padding inside the input fields */
+  margin-bottom: 15px; /* Add some margin below the input fields */
+  border: 1px solid #ccc; /* Set a light gray border */
+  border-radius: 4px; /* Round the corners */
+  font-size: 16px; /* Set the font size */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Styling for the textarea field */
+.add-entry-container textarea {
+  height: 100px; /* Set a fixed height for the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Styling for the submit button */
+.add-entry-container .btn-primary {
+  background-color: #007bff; /* Set a primary blue background color */
+  color: white; /* Set the text color to white */
+  padding: 10px 20px; /* Add padding around the button */
+  border: none; /* Remove the default border */
+  border-radius: 4px; /* Round the corners */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  font-size: 16px; /* Set the font size */
+}
+
+.add-entry-container .btn-primary:hover {
+  background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* Container styling for the entries */
+.view-entries-container {
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 50px auto; /* Center the container and add top margin */
+  padding: 20px; /* Add padding inside the container */
+  background-color: white; /* Set a background color */
+  border-radius: 8px; /* Round the corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.view-entries-container h2 {
+  text-align: center; /* Centers the text horizontally */
+  margin-bottom: 20px; /* Adds some spacing below the heading */
+}
+
+/* Styling for the entry items */
+.view-entries-container .list-group-item {
+  margin-bottom: 15px; /* Add some margin between list items */
+  padding: 15px; /* Add padding inside each list item */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Round the corners */
+}
+
+/* Heading for each entry */
+.view-entries-container h5 {
+  margin-bottom: 10px; /* Add some space below the heading */
+  font-size: 20px; /* Set font size */
+  font-weight: bold; /* Make the heading bold */
+}
+
+/* Styling for the entry details */
+.view-entries-container p {
+  margin: 5px 0; /* Add vertical spacing between paragraphs */
+  font-size: 16px; /* Set font size */
+}
+
+/* Button styling */
+.view-entries-container .btn {
+  margin-right: 10px; /* Add some space between buttons */
+  padding: 8px 15px; /* Add padding inside buttons */
+  border-radius: 4px; /* Round the corners */
+  font-size: 14px; /* Set font size */
+}
+
+/* Warning button styling */
+.view-entries-container .btn-warning {
+  background-color: #ffc107; /* Set background color for warning button */
+  border: none; /* Remove default border */
+  color: white; /* Set text color to white */
+}
+
+.view-entries-container .btn-warning:hover {
+  background-color: #e0a800; /* Darken the background on hover */
+}
+
+/* Danger button styling */
+.view-entries-container .btn-danger {
+  background-color: #dc3545; /* Set background color for danger button */
+  border: none; /* Remove default border */
+  color: white; /* Set text color to white */
+}
+
+.view-entries-container .btn-danger:hover {
+  background-color: #c82333; /* Darken the background on hover */
+}
